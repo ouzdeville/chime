@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+from utils.i18n import I18n
 
 hide_menu_style = """
         <style>
@@ -9,6 +10,8 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
+i18n = I18n('translate')
+i18n.set_locale('ja')
 
 delaware = 564696
 chester = 519293
@@ -20,13 +23,13 @@ known_infections = 31
 
 # Widgets
 initial_infections = st.sidebar.number_input(
-    "Currently Known Regional Infections", value=known_infections, step=10, format="%i"
+    i18n.t("CurrentlyKnownRegionalInfections"), value=known_infections, step=10, format="%i"
 )
 current_hosp = st.sidebar.number_input(
-    "Currently Hospitalized COVID-19 Patients", value=2, step=1, format="%i"
+    i18n.t("CurrentlyHospitalizedCOVID19Patients"), value=2, step=1, format="%i"
 )
 doubling_time = st.sidebar.number_input(
-    "Doubling Time (days)", value=6, step=1, format="%i"
+    i18n.t("DoublingTime(days)"), value=6, step=1, format="%i"
 )
 hosp_rate = (
     st.sidebar.number_input("Hospitalization %", 0, 100, value=5, step=1, format="%i")
