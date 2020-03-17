@@ -1,0 +1,7 @@
+{
+  "en" : {
+    "CurrentlyKnownRegionalInfections" : "Currently Known Regional Infections",
+    "CurrentlyHospitalizedCOVID19Patients" : "Currently Hospitalized COVID-19 Patients",
+    "DoublingTime(days)" : "Doubling Time (days)"
+  }
+}

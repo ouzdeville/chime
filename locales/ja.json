@@ -1,0 +1,9 @@
+{
+  "ja" : {
+    "CurrentlyKnownRegionalInfections" : "現在知られている地域の感染人数",
+    "CurrentlyHospitalizedCOVID19Patients" : "現在入院中のCOVID-19患者数",
+    "DoublingTime(days)" : "患者倍増期間 (日数)"
+  }
+}
+
+

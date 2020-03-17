@@ -2,10 +2,10 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import matplotlib
+import i18n
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from utils.i18n import I18n
 
 hide_menu_style = """
         <style>
@@ -13,8 +13,11 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-i18n = I18n('translate')
-i18n.set_locale('ja')
+i18n.set('file_format', 'json')
+i18n.set('filename_format', '{locale}.{format}')
+i18n.set('locale', 'jp')
+i18n.set('fallback', 'en')
+i18n.load_path.append('./locales')
 
 delaware = 564696
 chester = 519293

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ebb8db07ed2564a529898735da3f39a595cd74fb691cc2b292ef168dd47ff86a"
+            "sha256": "c9205749b883a5210a746382fc2ae8cd577e37318a6f070c8b58019d5d35525c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -22,6 +22,14 @@
                 "sha256:d31270c82ce5e37b25fc3bc4e990dc6ac593620a2be0c8c075f297409a92af90"
             ],
             "version": "==4.0.1"
+        },
+        "appnope": {
+            "hashes": [
+                "sha256:5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0",
+                "sha256:8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71"
+            ],
+            "markers": "platform_system == 'Darwin'",
+            "version": "==0.1.0"
         },
         "astor": {
             "hashes": [
@@ -66,17 +74,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:50105a25e301e20b361b2b8fafee196a425a4758e51f400a0f381d42e4bd909e",
-                "sha256:5fe70e656f92e4e649dc4cf05786f57d180e5d491bcb22c80411512ec2b27c15"
+                "sha256:172f07391ad6bd261336cddaf988944b2d8e528a7c036d82c7841676cbc935ec",
+                "sha256:e3cf4a0e1a6d79d2761b6ab050cb897a4e753f625524d15c01540f9522a11874"
             ],
-            "version": "==1.12.21"
+            "version": "==1.12.22"
         },
         "botocore": {
             "hashes": [
-                "sha256:4aaf6c94bcaace260138d32eae144be1b5d2ddce9ef0f395da32c68e106ff20f",
-                "sha256:86f7f1c489887f9e3c2ede598e2a30f8bd259c11e8ebe25e897e40231b3f4bc8"
+                "sha256:ac6b6ae659b797f7bb106a7bee5ff1c7de9ece85e542a334a1cd618f9f2782cc",
+                "sha256:b8b399828d6dfe8ee879c22aa313591c183b78a8733df437ba84d9f39cd1b219"
             ],
-            "version": "==1.15.21"
+            "version": "==1.15.22"
         },
         "certifi": {
             "hashes": [
@@ -548,6 +556,14 @@
                 "sha256:c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
             ],
             "version": "==2.8.0"
+        },
+        "python-i18n": {
+            "hashes": [
+                "sha256:095cb67a449f9caaddb4ca034255dcb442b1d1aca874294eda537bb5ea919892",
+                "sha256:85954be9c16b53221b42ebdf5164d6e6fef80f2dd0e388c7a468687330bba1d3"
+            ],
+            "index": "pypi",
+            "version": "==0.3.7"
         },
         "pytz": {
             "hashes": [

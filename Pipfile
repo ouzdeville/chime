@@ -10,6 +10,7 @@ streamlit = "*"
 pandas = "*"
 numpy = "*"
 matplotlib = "*"
+python-i18n = "*"
 
 [requires]
 python_version = "3.7"
