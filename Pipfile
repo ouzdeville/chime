@@ -11,6 +11,7 @@ pandas = "*"
 numpy = "*"
 python-i18n = "*"
 altair = "*"
+pyyaml = "*"
 
 [requires]
 python_version = "3.7"
