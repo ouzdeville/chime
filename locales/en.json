@@ -1,7 +1,18 @@
 {
-  "en" : {
-    "CurrentlyKnownRegionalInfections" : "Currently Known Regional Infections",
-    "CurrentlyHospitalizedCOVID19Patients" : "Currently Hospitalized COVID-19 Patients",
-    "DoublingTime(days)" : "Doubling Time (days)"
+  "en": {
+    "Currently Known Regional Infections" : "Currently Known Regional Infections",
+    "Currently Hospitalized COVID-19 Patients" : "Currently Hospitalized COVID-19 Patients",
+    "Doubling time before social distancing (days)" : "Doubling time before social distancing (days)",
+    "Social distancing (% reduction in social contact)" : "Social distancing (% reduction in social contact)",
+    "Hospitalization %(total infections)" : "Hospitalization %(total infections)",
+    "ICU %(total infections)" : "ICU %(total infections)",
+    "Ventilated %(total infections)" : "Ventilated %(total infections)",
+    "Hospital Length of Stay" : "Hospital Length of Stay",
+    "ICU Length of Stay" : "ICU Length of Stay",
+    "Vent Length of Stay" : "Vent Length of Stay",
+    "Hospital Market Share (%)" : "Hospital Market Share (%)",
+    "Regional Population" : "Regional Population",
+    "COVID-19 Hospital Impact Model for Epidemics" : "COVID-19 Hospital Impact Model for Epidemics",
+    "This tool was developed by...": "*This tool was developed by the [Predictive Healthcare team](http://predictivehealthcare.pennmedicine.org/) at\nPenn Medicine. For questions and comments please see our\n[contact page](http://predictivehealthcare.pennmedicine.org/contact/). Code can be found on [Github](https://github.com/pennsignals/chime).\nJoin our [Slack channel](https://codeforphilly.org/chat?channel=covid19-chime-penn) if you would like to get involved!*"
   }
 }

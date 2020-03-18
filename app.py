@@ -29,40 +29,40 @@ known_cases = 4 # update daily
 
 # Widgets
 current_hosp = st.sidebar.number_input(
-    i18n.t("CurrentlyHospitalizedCOVID19Patients"), value=known_cases, step=1, format="%i"
+    i18n.t("Currently Hospitalized COVID-19 Patients"), value=known_cases, step=1, format="%i"
 )
 initial_infections = st.sidebar.number_input(
-    i18n.t("CurrentlyKnownRegionalInfections"), value=known_infections, step=10, format="%i"
+    i18n.t("Currently Known Regional Infections"), value=known_infections, step=10, format="%i"
 )
 doubling_time = st.sidebar.number_input(
-    "Doubling time before social distancing (days)", value=6, step=1, format="%i"
+    i18n.t("Doubling time before social distancing (days)"), value=6, step=1, format="%i"
 )
 relative_contact_rate = st.sidebar.number_input(
-    "Social distancing (% reduction in social contact)", 0, 100, value=0, step=5, format="%i"
+    i18n.t("Social distancing (% reduction in social contact)"), 0, 100, value=0, step=5, format="%i"
 )/100.0
 
 hosp_rate = (
-    st.sidebar.number_input("Hospitalization %(total infections)", 0, 100, value=5, step=1, format="%i")
+    st.sidebar.number_input(i18n.t("Hospitalization %(total infections)"), 0, 100, value=5, step=1, format="%i")
     / 100.0
 )
 icu_rate = (
-    st.sidebar.number_input("ICU %(total infections)", 0, 100, value=2, step=1, format="%i") / 100.0
+    st.sidebar.number_input(i18n.t("ICU %(total infections)"), 0, 100, value=2, step=1, format="%i") / 100.0
 )
 vent_rate = (
-    st.sidebar.number_input("Ventilated %(total infections)", 0, 100, value=1, step=1, format="%i")
+    st.sidebar.number_input(i18n.t("Ventilated %(total infections)"), 0, 100, value=1, step=1, format="%i")
     / 100.0
 )
-hosp_los = st.sidebar.number_input("Hospital Length of Stay", value=7, step=1, format="%i")
-icu_los = st.sidebar.number_input("ICU Length of Stay", value=9, step=1, format="%i")
-vent_los = st.sidebar.number_input("Vent Length of Stay", value=10, step=1, format="%i")
+hosp_los = st.sidebar.number_input(i18n.t("Hospital Length of Stay"), value=7, step=1, format="%i")
+icu_los = st.sidebar.number_input(i18n.t("ICU Length of Stay"), value=9, step=1, format="%i")
+vent_los = st.sidebar.number_input(i18n.t("Vent Length of Stay"), value=10, step=1, format="%i")
 Penn_market_share = (
     st.sidebar.number_input(
-        "Hospital Market Share (%)", 0.0, 100.0, value=15.0, step=1.0, format="%f"
+        i18n.t("Hospital Market Share (%)"), 0.0, 100.0, value=15.0, step=1.0, format="%f"
     )
     / 100.0
 )
 S = st.sidebar.number_input(
-    "Regional Population", value=S_default, step=100000, format="%i"
+    i18n.t("Regional Population"), value=S_default, step=100000, format="%i"
 )
 
 total_infections = current_hosp / Penn_market_share / hosp_rate
@@ -85,12 +85,8 @@ r_t = beta / gamma * S # r_t is r_0 after distancing
 r_naught = r_t / (1-relative_contact_rate)
 doubling_time_t = 1/np.log2(beta*S - gamma +1) # doubling time after distancing
 
-st.title("COVID-19 Hospital Impact Model for Epidemics")
-st.markdown(
-    """*This tool was developed by the [Predictive Healthcare team](http://predictivehealthcare.pennmedicine.org/) at
-Penn Medicine. For questions and comments please see our
-[contact page](http://predictivehealthcare.pennmedicine.org/contact/). Code can be found on [Github](https://github.com/pennsignals/chime).
-Join our [Slack channel](https://codeforphilly.org/chat?channel=covid19-chime-penn) if you would like to get involved!*""")
+st.title(i18n.t("COVID-19 Hospital Impact Model for Epidemics"))
+st.markdown(i18n.t("This tool was developed by..."))
 
 st.markdown(
     """The estimated number of currently infected individuals is **{total_infections:.0f}**. The **{initial_infections}** 
