@@ -12,9 +12,8 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-#i18n.set('file_format', 'json')
 i18n.set('filename_format', '{locale}.{format}')
-i18n.set('locale', 'ja')
+i18n.set('locale', 'en')
 i18n.set('fallback', 'en')
 i18n.load_path.append('./locales')
 
