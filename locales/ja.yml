@@ -1,5 +1,5 @@
 ja:
-  "Currently Known Regional Infections": "現在知られている地域の感染人数"
+  "Currently Known Regional Infections (only used to compute detection rate - does not change projections)": "現在知られている地域の感染人数 (検出率産出のみに用いられ、予測に影響しません)"
   "Currently Hospitalized COVID-19 Patients": "現在入院中のCOVID-19患者数"
   "Doubling time before social distancing (days)": "社会的隔離を行う前の患者倍加時間 (日数)"
   "Social distancing (% reduction in social contact)": "社会的隔離 (社会的接触の減少割合 %)"
