@@ -87,7 +87,7 @@ r_naught = r_t / (1-relative_contact_rate)
 doubling_time_t = 1/np.log2(beta*S - gamma +1) # doubling time after distancing
 
 def head():
-    st.title(i18n.t("COVID-19 Hospital Impact Model for Epidemics"))
+    st.markdown(i18n.t("Penn Medicine - COVID-19 Hospital Impact Model for Epidemics"), unsafe_allow_html=True)
     st.markdown(i18n.t("This tool was developed by..."))
 
     st.markdown(

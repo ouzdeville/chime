@@ -11,7 +11,14 @@ en:
   "Vent Length of Stay": "Vent Length of Stay"
   "Hospital Market Share (%)": "Hospital Market Share (%)"
   "Regional Population": "Regional Population"
-  "COVID-19 Hospital Impact Model for Epidemics": "COVID-19 Hospital Impact Model for Epidemics"
+  "Penn Medicine - COVID-19 Hospital Impact Model for Epidemics": |+
+    <link rel="stylesheet" href="https://www1.pennmedicine.org/styles/shared/penn-medicine-header.css">
+
+    <div class="penn-medicine-header__content">
+    <a href="https://www.pennmedicine.org" class="penn-medicine-header__logo"
+    title="Go to the Penn Medicine home page">Penn Medicine</a>
+    <a id="title" class="penn-medicine-header__title">Penn Medicine - COVID-19 Hospital Impact Model for Epidemics</a>
+    </div>
   "This tool was developed by...": |+
     *This tool was developed by the [Predictive Healthcare team](http://predictivehealthcare.pennmedicine.org/) at
     Penn Medicine. For questions and comments please see our
